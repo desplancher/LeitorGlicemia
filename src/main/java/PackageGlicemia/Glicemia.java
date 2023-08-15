@@ -12,8 +12,15 @@ public class Glicemia {
         this.valorGlicose = valorGlicose;
     }
     
-    //public String classificarResultado(){
+    public void classificarResultado(){
+        System.out.println("Resultado: ");
+        if (getValorGlicose() < 100) {
+            System.out.print("Normoglicemia.");
+        } else if (getValorGlicose() >= 100 || getValorGlicose() < 126) {
+            System.out.print("Pré-diabetes.");
+        } else {
+            System.out.print("Diabates estabelecido.");
+        }
     
-    
-   // }
+    }
 }

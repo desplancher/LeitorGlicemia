@@ -31,7 +31,7 @@ public abstract class Exame {
         this.anoNascimento = anoNascimento;
     }
     
-    public abstract String classificarResultado();
+    public abstract void classificarResultado();
     
     public abstract String mostrarResultado();
     
