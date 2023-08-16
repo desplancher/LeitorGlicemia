@@ -41,7 +41,7 @@ public class Triglicerideos extends Exame{
 
     @Override
     public void mostrarResultado() {
-        System.out.println("Valor do exame de Glicemia: " + getValorTriglicerideos()+ " mg/l." + resultado);
+        System.out.println("Valor do exame de Triglicerideos: " + getValorTriglicerideos()+ " mg/l." + resultado);
     }
 
     @Override

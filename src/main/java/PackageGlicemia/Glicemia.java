@@ -1,4 +1,3 @@
-
 package PackageGlicemia;
 
 import java.util.Scanner;
@@ -31,7 +30,7 @@ public class Glicemia extends Exame{
 
     @Override
     public void mostrarResultado() {
-        System.out.println("Valor do exame de Glicemia: " + getValorGlicose() + " mg/l." + resultado);
+        System.out.println("Valor do exame de Glicemia: " + getValorGlicose() + " mg/dL." + resultado);
     }
 
     @Override
@@ -46,7 +45,7 @@ public class Glicemia extends Exame{
         System.out.println("Digite o tipo sanguineo do paciente: ");
         setTipoSanguineo(scan.nextLine());
        
-        System.out.println("Digite o valor em mg/l de Glicose do paciente: ");
+        System.out.println("Digite o valor em mg/dL de Glicose do paciente: ");
         setValorGlicose(Double.parseDouble(scan.nextLine()));
     }
 }

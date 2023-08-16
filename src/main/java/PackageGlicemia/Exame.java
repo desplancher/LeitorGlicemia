@@ -1,6 +1,4 @@
-
 package PackageGlicemia;
-
 
 public abstract class Exame {
     private String nomePaciente;
@@ -35,6 +33,5 @@ public abstract class Exame {
     
     public abstract void mostrarResultado();
     
-    public abstract void cadastrarExame();
-    
+    public abstract void cadastrarExame();   
 }
