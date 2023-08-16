@@ -37,6 +37,7 @@ public class Glicemia extends Exame{
 
     @Override
     public void cadastrarExame() {
+        System.out.println("Cadastro de Exame de Glicemia: ");
         System.out.println("Digite o nome do paciente: ");
         setNomePaciente(scan.nextLine());
         
