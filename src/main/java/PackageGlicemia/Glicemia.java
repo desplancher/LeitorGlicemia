@@ -1,9 +1,14 @@
 
 package PackageGlicemia;
 
-public class Glicemia {
-    private double valorGlicose;
+import java.util.Scanner;
 
+public class Glicemia extends Exame{
+    private double valorGlicose;
+    private String resultado;
+
+    Scanner scan = new Scanner(System.in);
+    
     public double getValorGlicose() {
         return valorGlicose;
     }
@@ -12,15 +17,40 @@ public class Glicemia {
         this.valorGlicose = valorGlicose;
     }
     
+    @Override
     public void classificarResultado(){
-        System.out.println("Resultado: ");
+        resultado = " Resultado: ";
         if (getValorGlicose() < 100) {
-            System.out.print("Normoglicemia.");
-        } else if (getValorGlicose() >= 100 || getValorGlicose() < 126) {
-            System.out.print("Pré-diabetes.");
+            resultado = resultado + "Normoglicemia.";
+        } else if (getValorGlicose() >= 100 && getValorGlicose() < 126) {
+            resultado = resultado + "Pré-diabetes.";
         } else {
-            System.out.print("Diabates estabelecido.");
+            resultado = resultado + "Diabates estabelecido.";
         }
     
+    }
+
+    @Override
+    public void mostrarResultado() {
+        System.out.println("Valor do exame de Glicemia: " + getValorGlicose() + " mg/l." + resultado);
+    }
+
+    @Override
+    public void cadastrarExame() {
+        System.out.println("Digite o nome do paciente: ");
+        setNomePaciente(scan.nextLine());
+        
+        System.out.println("Digite ano de nascimento do paciente: ");
+        setAnoNascimento(Integer.parseInt(scan.nextLine()));
+        
+        
+        System.out.println("Digite o tipo sanguineo do paciente: ");
+        setTipoSanguineo(scan.nextLine());
+       
+        
+        System.out.println("Digite o valor em mg/l de Glicose do paciente: ");
+        setValorGlicose(Double.parseDouble(scan.nextLine()));
+        
+        
     }
 }

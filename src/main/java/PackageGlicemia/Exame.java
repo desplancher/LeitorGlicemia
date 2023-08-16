@@ -33,8 +33,8 @@ public abstract class Exame {
     
     public abstract void classificarResultado();
     
-    public abstract String mostrarResultado();
+    public abstract void mostrarResultado();
     
-    public abstract String cadastrarExame();
+    public abstract void cadastrarExame();
     
 }
