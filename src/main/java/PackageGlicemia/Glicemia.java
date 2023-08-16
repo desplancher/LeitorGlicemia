@@ -27,7 +27,6 @@ public class Glicemia extends Exame{
         } else {
             resultado = resultado + "Diabates estabelecido.";
         }
-    
     }
 
     @Override
@@ -44,14 +43,10 @@ public class Glicemia extends Exame{
         System.out.println("Digite ano de nascimento do paciente: ");
         setAnoNascimento(Integer.parseInt(scan.nextLine()));
         
-        
         System.out.println("Digite o tipo sanguineo do paciente: ");
         setTipoSanguineo(scan.nextLine());
        
-        
         System.out.println("Digite o valor em mg/l de Glicose do paciente: ");
         setValorGlicose(Double.parseDouble(scan.nextLine()));
-        
-        
     }
 }

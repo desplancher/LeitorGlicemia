@@ -1,4 +1,3 @@
-
 package PackageGlicemia;
 
 import java.util.Scanner;
@@ -26,9 +25,6 @@ public class Triglicerideos extends Exame{
         this.idade = idade;
     }
     
-    
-    
-   
     @Override
     public void classificarResultado(){
         resultado = " Resultado: ";
@@ -41,7 +37,6 @@ public class Triglicerideos extends Exame{
         } else {
             resultado = resultado + "Triglicerideos altos!";
         }
-    
     }
 
     @Override
@@ -61,13 +56,8 @@ public class Triglicerideos extends Exame{
         
         System.out.println("Digite o tipo sanguineo do paciente: ");
         setTipoSanguineo(scan.nextLine());
-       
-        
+
         System.out.println("Digite o valor em mg/l de Triglicerideos do paciente: ");
         setValorTriglicerideos(Double.parseDouble(scan.nextLine()));
-        
-        
-        
-        
     }
 }
